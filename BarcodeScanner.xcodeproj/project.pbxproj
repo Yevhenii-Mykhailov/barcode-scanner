@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		BE0451482BC2E6ED00983FC5 /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0451472BC2E6ED00983FC5 /* BarcodeScannerApp.swift */; };
-		BE04514A2BC2E6ED00983FC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0451492BC2E6ED00983FC5 /* ContentView.swift */; };
+		BE04514A2BC2E6ED00983FC5 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0451492BC2E6ED00983FC5 /* BarcodeScannerView.swift */; };
 		BE04514C2BC2E6EE00983FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE04514B2BC2E6EE00983FC5 /* Assets.xcassets */; };
 		BE04514F2BC2E6EE00983FC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE04514E2BC2E6EE00983FC5 /* Preview Assets.xcassets */; };
+		BE0451562BC2EA5300983FC5 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0451552BC2EA5300983FC5 /* ScannerVC.swift */; };
+		BE0451582BC2F0C800983FC5 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0451572BC2F0C800983FC5 /* ScannerView.swift */; };
+		BE04515A2BC3002E00983FC5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0451592BC3002E00983FC5 /* Alert.swift */; };
+		BE04515C2BC3008700983FC5 /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04515B2BC3008700983FC5 /* BarcodeScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE0451442BC2E6ED00983FC5 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0451472BC2E6ED00983FC5 /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
-		BE0451492BC2E6ED00983FC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE0451492BC2E6ED00983FC5 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		BE04514B2BC2E6EE00983FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE04514E2BC2E6EE00983FC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE0451552BC2EA5300983FC5 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		BE0451572BC2F0C800983FC5 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		BE0451592BC3002E00983FC5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BE04515B2BC3008700983FC5 /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		BE0451462BC2E6ED00983FC5 /* BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				BE0451612BC3027F00983FC5 /* Utilities */,
+				BE04515F2BC3025900983FC5 /* Views */,
+				BE04515D2BC3023100983FC5 /* Screens */,
 				BE0451472BC2E6ED00983FC5 /* BarcodeScannerApp.swift */,
-				BE0451492BC2E6ED00983FC5 /* ContentView.swift */,
 				BE04514B2BC2E6EE00983FC5 /* Assets.xcassets */,
 				BE04514D2BC2E6EE00983FC5 /* Preview Content */,
 			);
@@ -65,6 +75,48 @@
 				BE04514E2BC2E6EE00983FC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE04515D2BC3023100983FC5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BE04515E2BC3023B00983FC5 /* BarcodeScanner */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BE04515E2BC3023B00983FC5 /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				BE04515B2BC3008700983FC5 /* BarcodeScannerViewModel.swift */,
+				BE0451492BC2E6ED00983FC5 /* BarcodeScannerView.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		BE04515F2BC3025900983FC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE0451602BC3026000983FC5 /* UIKitComponents */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE0451602BC3026000983FC5 /* UIKitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BE0451552BC2EA5300983FC5 /* ScannerVC.swift */,
+				BE0451572BC2F0C800983FC5 /* ScannerView.swift */,
+			);
+			path = UIKitComponents;
+			sourceTree = "<group>";
+		};
+		BE0451612BC3027F00983FC5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BE0451592BC3002E00983FC5 /* Alert.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE04514A2BC2E6ED00983FC5 /* ContentView.swift in Sources */,
+				BE04515C2BC3008700983FC5 /* BarcodeScannerViewModel.swift in Sources */,
+				BE0451562BC2EA5300983FC5 /* ScannerVC.swift in Sources */,
+				BE0451582BC2F0C800983FC5 /* ScannerView.swift in Sources */,
+				BE04514A2BC2E6ED00983FC5 /* BarcodeScannerView.swift in Sources */,
+				BE04515A2BC3002E00983FC5 /* Alert.swift in Sources */,
 				BE0451482BC2E6ED00983FC5 /* BarcodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +331,13 @@
 				DEVELOPMENT_TEAM = 637V5ANJMR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to scan barcode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +362,13 @@
 				DEVELOPMENT_TEAM = 637V5ANJMR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to scan barcode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
